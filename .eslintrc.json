@@ -4,8 +4,8 @@
       "es6": true
   },
   "extends": [
-      "plugin:react/recommended",
       "airbnb",
+      "plugin:react/recommended",
       "plugin:@typescript-eslint/recommended",
       "prettier/@typescript-eslint",
       "plugin:prettier/recommended"
@@ -29,6 +29,10 @@
       "prettier"
   ],
   "rules": {
+    "import/no-unresolved": [
+      2,
+      { "caseSensitive": false }
+   ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
@@ -49,12 +53,12 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
   },
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".ts", ".tsx"]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       },
       "typescript": {}
     }
