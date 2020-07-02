@@ -39,6 +39,7 @@
     "import/prefer-default-export": "off",
     "prettier/prettier": "error",
     "react/jsx-one-expression-per-line": "off",
+    "no-unused-expressions": "off",
     "camelcase": "off",
     "@typescript-eslint/explicit-function-return-type": [
       "error",
